@@ -2,7 +2,6 @@
 
 function vs_code_cd() {
   builtin printf "\e]633;P;Cwd=$(pwd)\a"
-  pwd
 }
 
 chpwd_functions=(${chpwd_functions[@]} "vs_code_cd")
