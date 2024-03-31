@@ -1,4 +1,4 @@
-[[ "$TERM_PROGRAM" == "vscode" ]] || exit
+[[ "$TERM_PROGRAM" == "vscode" ]] || return
 
 function vs_code_cd() {
   builtin printf "\e]633;P;Cwd=$(pwd)\a"
